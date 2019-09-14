@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Việt Anh</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/html5.css">
+         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript"> 
+            function kiemtra(){
+                tendn = document.getElementById("tendn").value;
+                pw = document.getElementById("pw").value;
+                ema = document.getElementById("ema").value;
+                tpp = document.getElementById("tpp").value;
+                    if(tendn ==""){
+                        document.getElementById("tdn").innerHTML = "!!cần nhập tên đăng nhập!!";
+                    }
+                    else
+                        document.getElementById("tdn").innerHTML = "";
+
+                    if(pw ==""){
+                        document.getElementById("pww").innerHTML = "!!cần nhập mật khẩu!!";
+                    }
+                    else 
+                        document.getElementById("pww").innerHTML ="";
+
+                    if(ema ==""){
+                        document.getElementById("em").innerHTML = "!!cần nhập email!!";
+                    }
+                    else 
+                        document.getElementById("em").innerHTML ="";
+
+                    if(tpp ==""){ 
+                        document.getElementById("tp").innerHTML = "!!cần nhập thành phố!!";
+                    }
+                    else 
+                        document.getElementById("tp").innerHTML ="";
+
+                    if(tendn != "" && pw != "" && ema !="" && tpp !=""){
+                        alert ("Chúc mừng bạn đã đăng ký thành công");
+                            return true;
+                        }   
+                        return false;
+            }
+
+            
+        </script>    </head>
+    <body>
+        <header>
+            <p id="wor">KIỀU VIỆT ANH <br> TT2D17</p>
+                              
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href=""> Trang chủ</a></li>
+                <li><a href="">Tin Tức</a></li>
+                <li><a href="">Liên Hệ</a></li>
+                <li><a href="">Đăng Nhập</a></li>
+                <li><a href="">Đăng Ký</a></li>
+            </ul>
+        </nav>
+        <section>
+            <p class="ti">chào mừng các bạn đến với lớp học html5 & css3</p>
+            <div class="you">
+                <form method="POST" onsubmit="return kiemtra();">
+                        <div class="tt">
+                            <p>Tên Đăng Nhập: </p> 
+                            <p>Mật Khẩu: </p>
+                            <p>Email: </p>
+                            <p>Thành Phố: </p>
+                            <p>Độ tuổi trung bình: </p>
+                        </div>
+                        <div class="inp">
+                            <input type="text" name="" value="" id="tendn"><br><br><span id="tdn"></span>
+                            <input type="password" name="" value="" id="pw"><br><br><span id="pww"></span>
+                            <input type="text" name="" value="" id="ema"><br><br><span id="em"></span>
+                            <input type="text" name="" value="" id="tpp"><br><br><span id="tp"></span>
+                            <input type="range" min="10" max="50" name=""  value="18" style="width: 27%;"><br>
+                        </div>
+                        
+                    </div>
+                    <div class="hoc">
+                        <p style="font-size: 18px;">Bạn muốn theo học lớp nào?</p>
+                        <div>
+                                <label for=""> <input type="checkbox" name="a" id="" value="" >HTML5 cơ bản</label>
+                                <label for=""> <input type="checkbox" name="a" id="" value="" style="margin-left:15px;">HTMl5 cơ bản</label><br>
+                                <label for=""> <input type="checkbox" name="a" id="" value="">HTML5 nâng cao</label>
+                                <label for=""> <input type="checkbox" name="a" id="" value="">HTMl5 nâng cao</label><br>
+                                
+                                <button type="submit" class="btn btn-primary" onclick="kiemtra(); ">Đăng ký</button>
+                                    
+                                <input type="reset" value="Làm mới" class="btn btn-default">
+                        </div>
+                        
+                </form>
+                <p style="margin-top: 44%;">thành phần của HTML5</p>   
+
+                <ul class="liss">
+                    <li class=""><a href=""> Effect </a></li>
+                    <li class=""><a href="">Connectmty</a></li>
+                    <li class=""><a href="">Multimedia</a></li>
+                    <li class=""><a href="">Offlinestorage</a></li>
+                </ul>
+            </div>
+             <img src="/image/200w.webp" alt="">  
+                    <!---------------------------------------------------------------------------------->
+
+        </section>
+        <aside>
+            <p></p>
+        </aside>
+        <footer>
+            <p>ĐÂY LÀ BÀI TẬP THỰC HÀNH CỦA KIỀU VIỆT ANH</p>
+        </footer>
+
+        <!----------------------------------------------------------------------------------------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PhimVans</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/trangchu.css">
+		<link rel="stylesheet" type="text/css" href="css/tab.css">
+	</head>
+	<body>
+		<div class="wrap">
+				
+				<div class="col">
+						<ul id="tab1">
+							<li id="tab1"><a href="trangchu.html"><img src="images/setting.png" alt="logo" width="50px" ></a></li>
+							<li id="tab"><a href="trangchu.html"><font id="font-color">Trang Chủ</font></a></li>
+						</ul>
+
+						<div class="box">
+							<div class="container-2">
+									<span class="icon"><i class="fa fa-search"> <img src="images/seach.png" alt="" width="20px"></i></span>
+									<input type="search" id="search" placeholder="    Search..." />
+							</div>
+						</div>
+
+						<div class="lis2">
+						<ul class="col2" align="right">
+							<li id="tab2"> <a href="" style=" width: 80px;"><font id="font-color;" style="margin-right: 9px;">Tin Tức</font></a></li>
+							<li id="tab2"> <a href="login.html" ><font id="font-color;" style="margin-right: 14px;">Đăng Nhập</font></a></li>
+						</ul>
+						</div>
+					</div>
+						<content>
+						<div class="img">
+								<div class="os1">
+									<h2 style="color: black; margin-left: 20px;">Admin</h2>
+									<img src="images/va.jpg" alt="Admin" style="width: 60px; margin-left: 20px">
+									<p style="float: right; color: black; margin-top:20px; margin-right: 20px">
+											SĐT: 0972692746 <br>
+											FB: vanh.viet.167
+									</p>
+									<p style="color: black; margin-left: 20px; margin-top: 10px">		
+										- Lập Trình web tại Hà Nội <br>
+										- Từng học tại ĐH Công Nghiệp Việt Trì- Cơ sở Hà Nội<br>
+										- Đã học tại Trường Đại học Công Nghiệp Việt Trì (VUI)<br>
+										- Sống tại Hà Nội<br>
+										- Đến từ Hà Nội
+									</p>
+								</div>
+
+								<div class="os2">
+											
+		</div>
+
+		
+	</body>
+	<script type="text/javascript">
+        var buttons = document.getElementsByClassName('tablinks');
+        var contents = document.getElementsByClassName('tabcontent');
+        function showContent(id){
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            var content = document.getElementById(id);
+            content.style.display = 'block';
+        }
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function(){
+                var id = this.textContent;
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].classList.remove("active");
+                }
+                this.className += " active";
+                showContent(id);
+            });
+        }
+        showContent('Animations');
+	</script>
+</html>

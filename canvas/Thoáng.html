@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <canvas id="vietten" width="600" height="400"  style="border: 1px solid red; " ></canvas>
+			<script >
+						var ten=document.getElementById("vietten");
+ 						  var duongthang=ten.getContext("2d");
+
+ 						  var chuh=document.getElementById('vietten');
+ 						  var vietchuh=chuh.getContext("2d");
+
+ 						  var chuo=document.getElementById("vietten");
+ 						  var vietchuo=chuo.getContext("2d");
+
+ 						  var chua=document.getElementById("vietten");
+ 						  var vietchua=chua.getContext("2d");
+
+ 						  var chun=document.getElementById("vietten");
+ 						  var vietchun=chun.getContext("2d");
+
+ 						  var chug=document.getElementById('vietten');
+ 						  var vietchug=chug.getContext("2d");
+
+ 						  var dau=document.getElementById("vietten");
+ 						  var vietdau=dau.getContext("2d");
+
+
+ 						  //chu T
+
+ 						  duongthang.beginPath();    		// khai báo đường thẳng mới
+ 						  duongthang.moveTo(40,40);  		// bắt đầu 
+ 						   duongthang.lineTo(130,40); 	   //kết thúc
+ 						   duongthang.moveTo(85,40);
+ 						   duongthang.lineTo(85,140);
+ 						   duongthang.lineWidth=8;				//độ to nét
+ 						   duongthang.strokeStyle="red";		//màu nét
+ 						   duongthang.fillStyle="pink";			//màu nền 
+ 						   duongthang.fill();					//đổ màu 
+ 						   duongthang.stroke();       			 // vẽ
+
+ 						   //chu H
+ 						   vietchuh.beginPath();
+ 						   vietchuh.moveTo(140,40);
+ 						   vietchuh.lineTo(140,140);
+ 						   vietchuh.moveTo(190,40);
+ 						   vietchuh.lineTo(190,140);
+ 						   vietchuh.moveTo(140,95);
+ 						   vietchuh.lineTo(190,95);
+ 						   vietchuh.stroke();
+
+ 						   //viết chữ 0
+ 						   vietchuo.beginPath();
+ 						   vietchuo.arc(255,90,55,10, 0*Math.PI,2*Math.PI,false); 
+ 						   //  trái , trên , độ lớn nhỏ  , duong tron , mac định
+ 							vietchuo.stroke(); 
+
+
+ 							// viết  chữ a 
+
+ 							vietchua.beginPath();
+ 							vietchua.moveTo( 340,40);
+ 							vietchua.lineTo(300,150);
+ 							vietchua.moveTo( 340,40);
+ 							vietchua.lineTo(370,150);
+ 							vietchua.moveTo(320,100);
+ 							vietchua.lineTo(355,100);
+ 							vietchua.stroke();
+
+ 							// viết chữ n 
+ 							vietchun.beginPath();
+ 							vietchun.moveTo(390,40);
+ 							vietchun.lineTo(390,150);
+ 							vietchun.moveTo(390,40);
+ 							vietchun.lineTo(440,150);
+ 							vietchun.moveTo(440,150);
+ 							vietchun.lineTo(440,40);
+ 							vietchun.stroke();
+
+
+ 							// viết chữ G 
+
+ 							// xác định tâm 
+ 							var x=chug.width/1.2;
+ 							var y=chug.height/4.2;
+ 							//bán lính 
+ 							var radius=55;
+
+ 							// góc bắt đầu 
+ 							 var batdau=0.050*Math.PI;
+
+ 							 // góc kết thúc 
+ 							 var ketthuc=1.8*Math.PI;
+
+
+ 							 // cùng chiểu kim đồng hồ 
+ 							 var conterClockwise=false;
+
+ 							 // bắt đầu vẽ 
+
+ 							 vietchug.beginPath();
+ 							 vietchug.arc(x,y,radius,batdau,ketthuc,conterClockwise);
+ 							 
+
+ 							 // vẽ dấu gạch chữ g 
+
+ 							 vietchug.moveTo(590,100);
+ 							 vietchug.lineTo(520,100);
+							 vietchug.stroke();
+
+							 // viết dấu 
+							 vietdau.beginPath();
+							 vietdau.moveTo(310,20);
+							 vietdau.lineTo(370,5);
+							 vietdau.stroke();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;			</script>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

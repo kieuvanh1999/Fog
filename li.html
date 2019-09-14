@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style type="text/css">
+            div{
+                width: 250px;
+                height:150px;
+                background: wheat;
+                border-radius:20px 30px 10px 10px;
+                border: 9px solid;
+                border-image: url("../image/fb1d9a772b5fa4a81570857f23936e4d.jpg") 20% repeat;
+                transform: translate(300px,250px) scale(1, 1);
+                transition: height 4s, width 4s;
+                animation-name:vidu;
+                animation-duration:5s;
+                margin-top: -14%;   
+                      
+            }
+            @keyframes vidu{
+                25% { background-color: wheat;}
+                30% { background-color: pink;}
+                70% { background-color: rgb(226, 159, 13);}
+                100% { background-color: burlywood;}
+            }
+            div:hover{
+                height: 300px;
+                width:  400px;
+               
+            }
+            #p1{
+                text-shadow: 2px 2px 0px blue, 1px 1px 0px yellow;
+                font-size: 50px;    
+                text-align: center;
+            }
+            
+            </style>
+        </head>
+    </head>
+    <body>
+        <div class="id" style="background-image: url(../image/fb1d9a772b5fa4a81570857f23936e4d.jpg); background-size: cover;">
+
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

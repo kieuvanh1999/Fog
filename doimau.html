@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript">
+            function doimau(){
+                var divs = document.getElementsByTagName("div");
+                for (var i=0; i<divs.length; i++){
+                    if ((i+1)%2==0){
+                        divs[i].style.background = "red";
+                    }
+                    else {
+                        divs[i].style.background = "blue";
+                    }             
+                }
+            }
+                //-----------Xóa-------------->
+            function deleteElement(){
+                var elements = document.getElementsByTagName("div");
+                var elements_remove = [];
+                var index = 0;
+                while (index < elements.length){
+                    if (index %2 !=0 && index !=0){
+                        elements_remove.push(elements[index]);
+                    }
+                    index++; 
+                }
+                //------------thực hiện Xóa------------>
+                index = 0;
+                while (index < elements_remove.length){
+                    elements_remove[index].remove();
+                    index++;
+                }
+            }
+
+            function print_number(){
+                var number = document.getElementById("number").value;
+                number=parseInt(number);
+                var bien='';
+                for(var i=1; i<=10; i++){
+                    bien=bien+number+'*'+i+'='+(number*i)+"<br>"
+                }
+                document.getElementById('result').innerHTML=bien;
+            }
+        </script>
+        <style>
+            div{
+                background-color: aliceblue;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+            <div>thẻ thử 1</div>
+            <div>thẻ thử 2</div>
+            <div>thẻ thử 3</div>
+            <div>thẻ thử 4</div>
+            <div>thẻ thử 5</div>
+            <div>thẻ thử 6</div>
+            <div>thẻ thử 7</div>
+            <div>thẻ thử 8</div>
+            <div>thẻ thử 9</div>
+            <div>thẻ thử 10</div>
+            
+            <button type="submit" class="btn btn-primary" onclick="doimau();" style="margin-top: 2%">đổi màu</button>
+            <button type="submit" class="btn btn-primary" onclick="deleteElement();" style="margin-top: 2%">Xóa</button>
+       
+        
+        <form action="" method="GET" class="form-horizontal" role="form" style="padding-top: 2%">
+               <label for="">nhập số: <input type="text" name="" id="number" value="0"></label>
+               <input type="button"  value="in ket qua" onclick="print_number();">
+        </form>
+        <div id="result"></div>
+        
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+
+</html>
