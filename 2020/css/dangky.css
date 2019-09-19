@@ -1,0 +1,70 @@
+.ti{
+    float: left;
+    padding-top: 5px;
+    font-size: 18px;
+    padding-left: 10px
+}
+.you{
+    width: 100%;
+    float: left;
+}
+.hoc{
+    float: left;
+    padding-top: 30px;
+    padding-left: 10px
+}
+.tt{
+    float: left;
+    padding-top: 20px;
+    display: block;
+}
+.inp{
+    float: right;
+    padding-top: 20px;
+    line-height: 8px;
+    width: 80%;
+}
+
+#tdn{
+    float: right;
+    margin-top: -26px;
+    margin-right: 20%;
+    color: red;
+}
+#pww{
+    float: right;
+    margin-top: -26px;
+    margin-right: 20%;
+    color: red;
+}
+#em{
+    float: right;
+    color: red;
+    margin-top: -23px;
+    margin-right: 20%;
+}
+#tp{
+    float: right;
+    color: red;
+    margin-top: -23px;
+    margin-right: 20.5%;
+}
+.org {
+    margin-left: 32%;
+    margin-top: 10%;
+    color: white;
+    width: 40%;
+    border: 1px solid white;
+    height: 260px;
+    background-color: orange
+}
+
+form{
+    padding-left: 10px;
+}
+.p{
+    color: orange;
+}
+body{
+    background-color: #8b8dff
+}

@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+    <link rel="stylesheet" href="./css/test.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+          .container-2{
+            vertical-align: middle;
+            white-space: nowrap;
+            position: relative;
+          }
+          .container-2 input#search{
+            width: 53px;
+            height: 45px;
+            background: #2b303b;
+            border: none;
+            font-size: 10pt;
+            float: left;
+            color: #262626;
+            padding-left: 49px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            color: #fff;
+          
+            -webkit-transition: width .55s ease;
+            -moz-transition: width .55s ease;
+            -ms-transition: width .55s ease;
+            -o-transition: width .55s ease;
+            transition: width .55s ease;
+          }
+          .container-2 input#search::-webkit-input-placeholder {
+            color: #65737e;
+          }
+          
+          .container-2 input#search:-moz-placeholder {
+            color: #65737e;  
+          }
+          
+          .container-2 input#search::-moz-placeholder { 
+            color: #65737e;  
+          }
+          
+          .container-2 input#search:-ms-input-placeholder {  
+            color: #65737e;  
+          }
+          .container-2 .icon{
+            position: absolute;
+            top: 50%;
+            margin-left: 10px;
+            margin-top: 10px;
+            z-index: 1;
+            color: #4f5b66;
+          }
+          .container-2 input#search:focus, .container-2 input#search:active{
+            outline:none;
+            width: 200px;
+          }
+          
+          .container-2:hover input#search{
+          width: 235px;
+          }
+          
+          .container-2:hover .icon{
+            color: #93a2ad;
+          }
+          .box{
+            display: inline-block;
+            margin-top: 5px;
+          }
+    </style>
+  </head>
+ 
+  <body>
+     <div class="box">
+      <div class="container-2">
+              <span class="icon"><i class="fa fa-search"> <img src="./img/seach.png" alt="" width="20px"></i></span>
+              <input type="search" id="search" placeholder="Search...">
+      </div>
+    </div>
+ 
+    <!--------------------------------End footer-------------------------------------------------------> 
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

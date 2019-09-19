@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Việt Anh</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/dangky.css">
+         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript"> 
+            function kiemtra(){
+                tendn = document.getElementById("tendn").value;
+                pw = document.getElementById("pw").value;
+                ema = document.getElementById("ema").value;
+                tpp = document.getElementById("tpp").value;
+                    if(tendn ==""){
+                        document.getElementById("tdn").innerHTML = "!!cần nhập tên đăng nhập!!";
+                    }
+                    else
+                        document.getElementById("tdn").innerHTML = "";
+
+                    if(pw ==""){
+                        document.getElementById("pww").innerHTML = "!!cần nhập mật khẩu!!";
+                    }
+                    else 
+                        document.getElementById("pww").innerHTML ="";
+
+                    if(ema ==""){
+                        document.getElementById("em").innerHTML = "!!cần nhập email!!";
+                    }
+                    else 
+                        document.getElementById("em").innerHTML ="";
+
+                    if(tpp ==""){ 
+                        document.getElementById("tp").innerHTML = "!!cần nhập thành phố!!";
+                    }
+                    else 
+                        document.getElementById("tp").innerHTML ="";
+
+                    if(tendn != "" && pw != "" && ema !="" && tpp !=""){
+                        alert ("Chúc mừng bạn đã đăng ký thành công");
+                            return true;
+                        }   
+                        return false;
+            }
+        </script>    
+        </head>
+    <body>
+        
+        <div class="org">
+            <p class="ti">chào mừng các bạn đến với lớp học</p>
+            <div class="you">
+                <form method="POST" role="form">
+                        <div class="tt">
+                            <p>Tên Đăng Nhập: </p> 
+                            <p>Mật Khẩu: </p>
+                            <p>Email: </p>
+                            <p>Thành Phố: </p>                   
+                        </div>
+                        <div class="inp">
+                            <input type="text" name="" value="" id="tendn" class="p"><br><br><span id="tdn"></span>
+                            <input type="password" name="" value="" id="pw" class="p"><br><br><span id="pww"></span>
+                            <input type="text" name="" value="" id="ema" class="p"><br><br><span id="em"></span>
+                            <input type="text" name="" value="" id="tpp" class="p"><br><br><span id="tp"></span>                           
+                        </div>            
+                    </div>
+                    <div class="hoc"> 
+                                <button type="submit" class="btn btn-primary" onclick="kiemtra(); ">Đăng ký</button>
+                              <a href="./KVA-TT2D17.html" style="padding-left: 10px; color: white;"> <----  quay lại</a>
+                        </div>
+                    </div>     
+                </form>
+
+            </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

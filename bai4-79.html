@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            body{
+                width: 98%;
+                margin: 0 auto;
+                background-color:rgb(238, 222, 192);
+            }
+            menu ul li{
+                list-style-type: none;
+                margin-left: 50px;
+            }
+            
+            menu ul li a{
+                color: aliceblue;
+                text-decoration: none;
+                font-size: 18px; 
+            }
+            menu ul li:hover{
+                background-color:antiquewhite;             
+            }
+           
+            .carousel{
+                width: 63%;
+                height: 350px;
+                float: left;
+                margin-top: 5.5%;
+                margin-left: -15%;
+            }
+            .list-group-item{
+                padding-left: 10px;
+                padding-top: 13.9px;
+                background-color: #fda83e;
+            }
+            .list-group a{
+                font-size: 18px
+            }
+           .wrap{
+               width: 1320px;
+           }
+           .navbar-nav li{
+                display: inline-block;
+           }
+            
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+        <header style="background-color: rgb(212, 125, 11); margin-top: -18px; height: 130px;">
+            <h1 style="padding-left: 25px; padding-top: 25px; color: aliceblue; font-size: 50px">Guide Vietnam</h1>
+            <h4 style="float: right;margin-top: -57px; padding-right: 25px ;color: aliceblue">gmail: guidevietnam@gmail.com</h4>
+            <h4 style="float: right;margin-top: -13px; padding-right: 25px ;color: aliceblue">Phone: 0919 555 545</h4>
+        </header>
+        <menu style="background-color: rgb(241, 173, 85); height: 50px; margin-top: -5px;">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Trang Chủ</a></li>
+                <li class="active"><a href="#">Thông Tin</a></li>
+                <li class="active"><a href="#">Liên hệ</a></li>
+                <li class="active"><a href="#">Đăng Ký</a></li>
+                <li class="active"><a href="#">Đăng Nhập</a></li>
+            </ul>  
+        </menu>
+        <section>
+            <div>
+                <h3 style="float: left; margin-left: 20px">VIỆT NAM TOURS AND PACKAGES</h3>
+                <h4 style="float: right;margin-top: 20px;margin-right: 20px">Thành Phố</h4>
+
+                <select  style="float: right;margin-top: 20px; margin-right: 10px;">
+                    <option value="">Hà Nội</option>
+                    <option value="">Hồ Chí Minh</option>
+                    <option value="">Hải Phòng</option>
+                    <option value="">Nam Định</option>
+                </select>
+                
+             </div>
+            <nav style="width: 17%; float: left; margin-top: 5.5%; margin-left: -32%">
+               <div class="list-group">
+                   <a href="#" class="list-group-item">Tours by category</a>
+                   <a href="#" class="list-group-item">Discovery tours</a>
+                   <a href="#" class="list-group-item">Goft tours</a>
+                   <a href="#" class="list-group-item">Goft tours</a>
+                   <a href="#" class="list-group-item">Day tours</a>
+                   <a href="#" class="list-group-item">Leisure tours</a>
+                   <a href="#" class="list-group-item">Contact us</a>
+               </div>              
+            </nav>
+        <!---------------------------------------------------------------------------------------->
+            <div id="carousel-id" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+                    <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-id" data-slide-to="2" class=""></li>
+                    <li data-target="#carousel-id" data-slide-to="3" class="active"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item">
+                        <img src="/image/123878-space-wallpaper-4k-3840x2160-samsung-galaxy.jpg" style="height: 350px; width: 100%">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="image/bf97f7fb893ea02038a28bf6415fed02.jpg"style="height: 350px; width: 100%" >
+                        <div class="container">
+                            <div class="carousel-caption">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/image/fb1d9a772b5fa4a81570857f23936e4d.jpg"style="height: 350px; width: 100%" >
+                        <div class="container">
+                            <div class="carousel-caption">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item active">
+                        <img src="/image/ruler_of_the_land_blood_art_forest_101986_1366x768.jpg"style="height: 350px; width: 100%">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        <!---------------------------------------------------------------------------------------->
+                <div style="width: 20%; height: 350px; float: right; margin-top: 23px; background-color: rgb(241, 173, 85);margin-right: 2px;">
+                    <h4 style="background-color: rgb(243, 143, 28);width: 100%; height: 36px;line-height: 35px;margin-top: 0px;font-size: 22px; padding-left: 10px">Top destination</h4>    
+                    <div style="display: inline-block;">
+                        <img src="/image/fb1d9a772b5fa4a81570857f23936e4d.jpg" alt="" style="padding-left: 3px;width: 40%; float: left; height: 70px; margin-top: 8px;">
+                        <div style="float: left;padding-top: 10px;padding-left: 20px">
+                            <p>Hanoi <br>
+                            Hanoi is very...</p>
+                            <a href="#">more info</a>
+                        </div>
+                    </div>
+                    <div style="display: inline-block;">
+                        <img src="/image/fb1d9a772b5fa4a81570857f23936e4d.jpg" alt="" style="padding-left: 3px;width: 40%; float: left; height: 70px; margin-top: 10px">
+                        <div style="float: left;padding-top: 10px;padding-left: 20px">
+                            <p>Hồ Chí Minh <br>
+                                Hồ Chí Minh is very...</p>
+                            <a href="#">more info</a>
+                        </div>
+                    </div>
+                    <div style="display: inline-block;">
+                        <img src="/image/fb1d9a772b5fa4a81570857f23936e4d.jpg" alt="" style="padding-left: 3px;width: 40%; float: left; height: 70px; margin-top: 10px">
+                        <div style="float: left;padding-top: 10px;padding-left: 20px">
+                            <p>Hải Phòng <br>
+                            Hải Phòng is very...</p>
+                            <a href="#">more info</a>
+                        </div>
+                    </div>
+               </div>
+               <aside>
+            
+               </aside>
+        </section>
+
+        <!------------------------------------------------------------------------------------------->
+
+        <article style="width: 100%; display: inline-block; height: 400px;margin-top: -30px;margin-left: -2px; margin-top: 20px;">
+            <h3 style="float: left; background-color: chocolate; height: 50px; padding-top: 12px;width: 19%; padding-left: 8px">Why Travel With Us ?</h3>
+            <h3 style="float: left; padding-left: 20px;height: 50px; padding-top: 12px; background-color: rgb(240, 126, 45); width: 81%">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</h3>
+        </article>
+        </div>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
